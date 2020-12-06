@@ -21,5 +21,5 @@ with(data,{
 	legend("topright", lty=1, col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), cex = 0.6)
 	plot(data$Time,as.numeric(as.character(data$Global_reactive_power)),type="l",xlab="datetime",ylab="Global_reactive_power")
 })
-dev.copy(png, filename="plot3.png")
+dev.copy(png, filename="plot3.png",width=480,height=480)
 dev.off()
